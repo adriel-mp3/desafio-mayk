@@ -11,14 +11,12 @@ function filterCards() {
       let filterText = filter.value.toLowerCase();
       
       if (!cardHeading.includes(filterText)) {
-        // hide the card element
         card.style.display = "none";
       }
       else {
         card.style.display = "block";
       }
     });
-    
   }
   else {
     cards.forEach((card) => {
